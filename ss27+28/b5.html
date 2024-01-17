@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let a=[1,2,3,4,55,6,7,8,9,10]
+        for (let b = 0; b < a.length; b++) {
+            let count =1
+            for(let i=b+1;i<a.length;i++){
+                if (a[b]===a[i]){
+                    count++
+                }
+            }
+            if(count==1){
+                console.log(a[b]);
+                break;
+            }
+        }
+    </script>
+</body>
+</html>

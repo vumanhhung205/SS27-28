@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let a=[1,1,1,2,'a','b','c']
+        let arr=[]
+        for (let b = 0; b < a.length; b++) {
+            let count=0
+            for(let i=0;i<a.length;i++){
+                if (a[b]==arr[i]){
+                    count++
+                }
+            }
+            if(count==0){
+                arr.push(a[b])
+            }
+        }
+        console.log("Mảng phân biệt là:",arr);
+    </script>
+</body>
+</html>

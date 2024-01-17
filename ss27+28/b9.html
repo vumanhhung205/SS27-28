@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    let numbers = [1, 2, 3, 4, 5];
+    let newArr = numbers.concat();
+    newArr.push(6);
+    console.log(newArr); 
+    console.log(numbers); 
+
+//     Kiểu tham trị (Value Types)
+// Kiểu này dùng cho các kiểu dữ liệu nguyên thuỷ: "String, Number, Boolean, BigInt, Symbol, undefined", null.
+// Kiểu này thì cũng khá là đơn giản, khi gán cho nó một giá trị thì nó sẽ lưu lại giá trị đó và tại một thời
+// điểm thì chỉ lưu một giá trị.Như vậy, giá trị của a và b lưu ở hai ô nhớ khác nhau nên việc sửa ở ô nhớ này
+// sẽ không ảnh hưởng đến ô nhớ khác.
+
+// Kiểu tham chiếu (Reference Types)
+// Kiểu này thì phức tạp hơn kiểu tham trị và được dùng cho các kiểu dữ liệu phức tạp:" Object, Array, Function".
+// Ở đây khi gán cho nó một giá trị thì nó không lưu lại giá trị này mà thực chất nó lưu lại địa chỉ của ô nhớ
+// lưu giá trị này.Như vậy, a và b cùng lưu lại địa chỉ của một ô nhớ, khi một biến thay đổi thì giá trị trong ô
+// nhớ thay đổi mà địa chỉ ô nhớ không thay đổi nên bất kỳ biến nào trỏ đến địa chỉ này đều bị thay đổi theo.
+
+    </script>
+</body>
+</html>
